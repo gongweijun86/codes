@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>
+
+</title>
+ <link href="css/common.css" type="text/css" rel="stylesheet" />
+ <link href="css/iptv.css" type="text/css" rel="stylesheet" />
+ <script type="text/javascript" src="./include/func.js">
+
+</script>
+ <script type="text/javascript" src="./include/jquery.js">
+
+</script>
+ 
+</head>
+ <body>
+ <div id="top_menu">
+ <div id="top_wel" class="outermost">
+ 欢迎来到CERNET大讲堂!&nbsp;&nbsp;[<a href="http://sp-video.bupt6.edu.cn">
+登陆
+</a>
+|<a href="http://sp-bt.bupt6.edu.cn">
+注册
+</a>
+|<a href="#">
+帮助
+</a>
+] 
+</div>
+ 
+</div>
+ <div id="main_menu" class="outermost">
+ <div id="logo">
+ <a href="index.php">
+<img src="images/logo.gif" />
+
+</a>
+ 
+</div>
+ <div id="nav">
+ <ul>
+ <li id="bg_nav_left" class="">
+ <a href="./index.php">
+首&nbsp;&nbsp;&nbsp;&nbsp;页
+</a>
+ 
+</li>
+ <li id="" class="">
+ <a href="./notice.php">
+讲座预告
+</a>
+ 
+</li>
+ <li id="" class="">
+ <a href="./list.php">
+讲座点播
+</a>
+ 
+</li>
+ <li id="" class="">
+ <a href="./special.php">
+专栏节目
+</a>
+ 
+</li>
+ <li id="" class="">
+ <a href="./realcourse.php">
+大学堂
+</a>
+ 
+</li>
+ <li id="bg_nav_right" class="nav_selected">
+ <a href="./iptv.php">
+IPTV
+</a>
+ 
+</li>
+ 
+</ul>
+ 
+</div>
+ <div id="main_search">
+ <div id="hot_search">
+ <span class="s_co">
+热门词汇：
+</span>
+ <a href="result.php?lec_name=校庆">
+校庆
+</a>
+ <a href="result.php?lec_name=同一首歌">
+同一首歌
+</a>
+ <a href="result.php?lec_name=开放式课程">
+开放式课程
+</a>
+ 
+</div>
+ <div id="search_form">
+ <form method="get" action="result.php">
+ <select name="lec_type" class="search_type">
+ <option value="">
+所有类型
+</option>
+ <option value="1">
+学术讲座
+</option>
+ <option value="2">
+其他活动
+</option>
+ 
+</select>
+ <input name="lec_name" type="text" class="search_key" value="请输入关键字" onfocus="if(this.value=='请输入关键字') this.value=''" onblur="if(this.value=='') this.value='请输入关键字'"/>
+ <input type="submit" class="search_submit" value="搜索" />
+ <a class="s_co search_advanced" href="./search.php">
+高级搜索
+</a>
+ 
+</form>
+ 
+</div>
+ <div id="top_list">
+ <a href="#">
+排行榜
+</a>
+|<a href="#">
+New
+</a>
+|<a href="#">
+Hot
+</a>
+ 
+</div>
+ 
+</div>
+ 
+</div>
+<div class="colums_bigest outermost_iptv">
+ <div class="colums_bigest_head">
+ <h3>
+IPTV
+</h3>
+ 
+</div>
+ <div class="colums_bigest_content iptv">
+ <h4 class="tv_name">
+高清频道
+</h4>
+ <ul class="tv_list">
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-HD">
+ <img src="./iptv/img/default.gif" />
+ <span>
+CCTV综合高清
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-HD">
+ <img src="./iptv/img/default.gif" />
+ <span>
+BTV高清
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/HNWS-HD">
+ <img src="./iptv/img/default.gif" />
+ <span>
+湖南卫视高清
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/JSWS-HD">
+ <img src="./iptv/img/default.gif" />
+ <span>
+江苏卫视高清
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/ZJWS-HD">
+ <img src="./iptv/img/default.gif" />
+ <span>
+浙江卫视高清
+</span>
+ 
+</a>
+ 
+</li>
+ 
+</ul>
+ <h4 class="tv_name">
+中央电视
+</h4>
+ <ul class="tv_list">
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-2">
+ <img src="./iptv/img/1269843541.jpg" />
+ <span>
+CCTV经济
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-3">
+ <img src="./iptv/img/1269843569.jpg" />
+ <span>
+CCTV综艺
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-4">
+ <img src="./iptv/img/1269843605.jpg" />
+ <span>
+CCTV综合国际
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-5">
+ <img src="./iptv/img/1269843622.jpg" />
+ <span>
+CCTV体育
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-6">
+ <img src="./iptv/img/1269843643.jpg" />
+ <span>
+CCTV电影
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-8">
+ <img src="./iptv/img/1269843685.jpg" />
+ <span>
+CCTV电视剧
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-9">
+ <img src="./iptv/img/1269843706.jpg" />
+ <span>
+CCTV英语国际
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-10">
+ <img src="./iptv/img/1269843725.jpg" />
+ <span>
+CCTV科学教育
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-11">
+ <img src="./iptv/img/1269843745.jpg" />
+ <span>
+CCTV戏曲
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-12">
+ <img src="./iptv/img/1269843765.jpg" />
+ <span>
+CCTV社会语法
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-news">
+ <img src="./iptv/img/default.gif" />
+ <span>
+CCTV新闻
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-music">
+ <img src="./iptv/img/default.gif" />
+ <span>
+CCTV音乐
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-kid">
+ <img src="./iptv/img/default.gif" />
+ <span>
+CCTV少儿
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CETV-1">
+ <img src="./iptv/img/default.gif" />
+ <span>
+中央教育一套
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CETV-3">
+ <img src="./iptv/img/default.gif" />
+ <span>
+中央教育三套
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-HD">
+ <img src="./iptv/img/default.gif" />
+ <span>
+央视高清
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-7">
+ <img src="./iptv/img/1269843664.jpg" />
+ <span>
+CCTV少儿军事
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CCTV-1">
+ <img src="./iptv/img/1269843504.jpg" />
+ <span>
+CCTV综合
+</span>
+ 
+</a>
+ 
+</li>
+ 
+</ul>
+ <h4 class="tv_name">
+北京电视台
+</h4>
+ <ul class="tv_list">
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-1">
+ <img src="./iptv/img/1269844549.jpg" />
+ <span>
+BTV-1
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-2">
+ <img src="./iptv/img/1269844572.jpg" />
+ <span>
+BTV-2文艺
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-3">
+ <img src="./iptv/img/1269844588.jpg" />
+ <span>
+BTV-3科教
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-4">
+ <img src="./iptv/img/1269844615.jpg" />
+ <span>
+BTV-4影视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-5">
+ <img src="./iptv/img/1269844633.jpg" />
+ <span>
+BTV-5财经
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-6">
+ <img src="./iptv/img/1269844667.jpg" />
+ <span>
+BTV-6体育
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-7">
+ <img src="./iptv/img/1269844684.jpg" />
+ <span>
+BTV-7生活
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/BTV-8">
+ <img src="./iptv/img/1269844702.jpg" />
+ <span>
+BTV-8青年
+</span>
+ 
+</a>
+ 
+</li>
+ 
+</ul>
+ <h4 class="tv_name">
+各省卫视
+</h4>
+ <ul class="tv_list">
+ <li>
+ <a href="mms://bupt02.video.edu.cn/HNWS">
+ <img src="./iptv/img/1269845587.jpg" />
+ <span>
+湖南卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/HBWS">
+ <img src="./iptv/img/1269845615.jpg" />
+ <span>
+湖北卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/LNWS">
+ <img src="./iptv/img/1269845651.gif" />
+ <span>
+辽宁卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/SHWS">
+ <img src="./iptv/img/1269845667.jpg" />
+ <span>
+上海卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/YNWS">
+ <img src="./iptv/img/1269845703.jpg" />
+ <span>
+云南卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/FJWS">
+ <img src="./iptv/img/1269845760.jpg" />
+ <span>
+福建卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/GDWS">
+ <img src="./iptv/img/1269845782.gif" />
+ <span>
+广东卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/AHWS">
+ <img src="./iptv/img/1269845811.gif" />
+ <span>
+安徽卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/SZWS">
+ <img src="./iptv/img/1269845868.jpg" />
+ <span>
+深圳卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/ZJWS">
+ <img src="./iptv/img/1269845901.jpg" />
+ <span>
+浙江卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/CQWS">
+ <img src="./iptv/img/1269845933.jpg" />
+ <span>
+重庆卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/JSWS">
+ <img src="./iptv/img/1269845951.jpg" />
+ <span>
+江苏卫视
+</span>
+ 
+</a>
+ 
+</li>
+ 
+</ul>
+ <h4 class="tv_name">
+其他卫视
+</h4>
+ <ul class="tv_list">
+ <li>
+ <a href="mms://bupt02.video.edu.cn/FHZW">
+ <img src="./iptv/img/1269846015.jpg" />
+ <span>
+凤凰中文
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/FHZX">
+ <img src="./iptv/img/1269846034.jpg" />
+ <span>
+凤凰资讯
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/KKDH">
+ <img src="./iptv/img/1269846058.jpg" />
+ <span>
+卡酷动画
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/LYWS">
+ <img src="./iptv/img/1269846079.jpg" />
+ <span>
+旅游卫视
+</span>
+ 
+</a>
+ 
+</li>
+ <li>
+ <a href="mms://bupt02.video.edu.cn/Discovery">
+ <img src="./iptv/img/1269846161.jpg" />
+ <span>
+Discovery
+</span>
+ 
+</a>
+ 
+</li>
+ 
+</ul>
+ 
+</div>
+ 
+</div>
+ <div id="copyright" class="outermost">
+ <span>
+Copyright @ BYR TEAM 2010.All rights reserved.
+</span>
+ <a href="#">
+关于我们
+</a>
+ <span>
+|
+</span>
+ <a href="#">
+联系我们
+</a>
+ <span>
+|
+</span>
+ <a href="#">
+帮助
+</a>
+ <img class="logo_footer" src="images/logo_footer.gif" />
+ 
+</div>
+ <div id=ipv6_enabled_www_test_logo>
+
+</div>
+ <script language="JavaScript" type="text/javascript">
+ var Ipv6_Js_Server = (("https:" == document.location.protocol) d t "https://" : "http://"); document.write(unescape("%3Cscript src='" + Ipv6_Js_Server + "www.ipv6forum.com/ipv6_enabled/sa/SA1.php?id=1757' type='text/javascript'%3E%3C/script%3E")); 
+</script>
+ 
+</body>
+ 
+</html>
+

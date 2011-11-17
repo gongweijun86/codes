@@ -1,0 +1,17 @@
+pat.table_id;
+pat.section_syntax_indicator;
+pat.reserved_future_use1;
+pat.reserved1;
+pat.section_length;
+pat.service_id;
+pat.reserved2;
+pat.version_number;
+pat.current_next_indicator;
+pat.section_number;
+pat.last_section_number;
+pat.transport_stream_id;
+pat.original_network_id;
+pat.segment_last_section_number;
+pat.last_table_id;
+pat.description;
+pat.CRC_32;

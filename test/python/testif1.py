@@ -1,0 +1,7 @@
+#!/usr/bin/python
+
+name = raw_input('name: ')
+if name.endswith('gwj'):
+	print 'hello gwj!'
+else:
+	print 'hello stranger!'

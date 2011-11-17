@@ -1,0 +1,7 @@
+Fruit	Price/lbs   Quantity
+Banana	    $0.89    100
+Peach	    $0.79    65
+Kiwi	    $1.50    22
+Pineapple   $1.29    35
+Apple	    $0.99    35
+Mango	    $2.20    78

@@ -1,0 +1,48 @@
+#define	EIT_TABLE_ID(b)			(b[1])			/*  */
+
+#define	EIT_SECTION_SYNX(b)		((b[2] & 0x80) >> 7)			/*  */
+
+#define	EIT_RESERVED_FUTURE_USD1(b)	((b[2] & 0x40) >> 6)			/*  */
+
+#define	EIT_RESERVED1(b)		((b[2] & 0x30) >> 4)			/*  */
+
+#define	EIT_SECTION_LENGTH(b)		(((b[2] & 0x0f) << 8) | b[3])			/*  */
+
+#define	EIT_SERVICE_ID(b)		((b[4] << 8) | b[5])			/*  */
+
+#define	EIT_RESERVED2(b)		((b[6] & 0xc0) >> 6)	/*  */
+
+#define	EIT_VERSION_NUM(b)		((b[6] & 0x3e) >> 1)			/*  */
+
+#define	EIT_CURRENT_NEXT_IND(b)			(b[6] & 0x01)			/*  */
+
+#define	EIT_SECTION_NUM(b)		(b[7])			/*  */
+
+#define	EIT_LST_SECTION_NUM(b)		(b[8])			/*  */
+
+#define	EIT_TS_ID(b)			((b[9] << 8) | b[10])			/*  */
+
+#define	EIT_ORIGINAL_NETWORK_ID(b)	((b[11] << 8) | b[12])			/*  */
+
+#define	EIT_SEG_LST_SECTION_NUM(b)	(b[13])			/*  */
+
+#define	EIT_LST_TABLE_ID(b)		(b[14])			/*  */
+
+#define	EIT_DESC_EVENT_ID(b)		((b[15] << 8) | b[16])			/*  */
+
+#define	EIT_DESC_START_TIME(b)		((b[17] << 32) | (b[18] << 24) | (b[19] << 16) | (b[20] << 8) | b[21] )			/*  */
+
+#define	EIT_DESC_DURATION(b)		((b[22] << 16) | (b[23] << 8) | b[24])			/*  */
+
+#define	EIT_DESC_RUN_STATUS(b)		((b[25] & 0xe0) >> 5)			/*  */
+
+#define	EIT_DESC_FREE_CA_MODE(b)	((b[25] & 0x10) >> 4)			/*  */
+
+#define	EIT_DESC_LOOP_LENGTH(b)		(((b[25] & 0x0f) << 8) | b[26])			/*  */
+
+#define	EIT_CRC(b)			({ \
+					    int n = EIT_SECTION_LENGTH(b); \
+					    int l = n -15; \
+					    int base = 15; \
+					    ((b[base + l] << 24) | (b[base + 1 + l] << 16) | (b[base + 2 + l] << 8) | b[base + 3 + l]); \
+					    })			/*  */

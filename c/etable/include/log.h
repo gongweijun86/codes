@@ -1,0 +1,46 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  log.h
+ *
+ *    Description:  log definition
+ *
+ *        Version:  1.0
+ *        Created:  2011年06月11日 14时04分27秒
+ *       Revision:  none
+ *       Compiler:  gcc
+ *
+ *         Author:  orion 
+ *        Company:  
+ *
+ * =====================================================================================
+ */
+
+
+#include "structure.h"
+
+#ifndef  _LOG_H_
+#define  _LOG_H_
+
+#define	LOG_FILE_PATH		"/home/orion/codes/c/etable/log"			/*  */
+
+#define	MAX_FILE_NAME_LEN	512			/*  */
+
+#ifdef	DEBUG
+    #define	debuglog(args...)	LOG(__FILE__, __LINE__, __func__, ##args);
+#else
+    #define	debuglog(args...)
+#endif
+
+typedef struct
+{
+	FILE *logfile;
+	int status;
+}_LOGFILE;
+
+_LOGFILE Log;
+
+int init_log(FILE *logfile, const char* logname);
+void LOG(const char* fname, const int linenum, const char* func, const char* fmt, ...);
+
+#endif

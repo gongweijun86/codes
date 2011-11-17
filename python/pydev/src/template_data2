@@ -1,0 +1,6 @@
+[import time]
+Dear [name]
+I hear you use the [language] a lot -- is it something I should condider?
+And, by the way, is [email] your correct email address?
+Fooville, [time.asctime()]
+Oscar Frozzbozz

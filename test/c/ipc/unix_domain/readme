@@ -1,0 +1,5 @@
+$ gcc unix_domain_change_client.c func_fd.c -o client
+$ gcc unix_domain_change_server.c func_fd.c -o server
+$ gcc unix_domain_change_child.c  func_fd.c -o child
+$ ./server
+$ ./client

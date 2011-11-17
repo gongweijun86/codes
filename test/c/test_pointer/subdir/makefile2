@@ -1,0 +1,21 @@
+CUR_DIR = $(shell pwd)
+OBJDIR_O = $(CUR_DIR)/objdir_o
+OBJDIR_D = $(CUR_DIR)/objdir_d
+
+define MKDIR
+if [ ! -d $(OBJDIR_D) ];then mkdir $(OBJDIR_D);fi
+if [ ! -d $(OBJDIR_O) ];then mkdir $(OBJDIR_O);fi
+endef
+
+main: out/main.o out/file.o
+#	$(MKDIR)
+	gcc -o main main.o file.o
+out/main.o: main.c file.h
+	gcc -c main.c
+out/file.o: file.c file.h
+	gcc -c file.c
+out:
+	mkdir $@
+clean:
+	rm -rf *.o main objdir_d objdir_o
+

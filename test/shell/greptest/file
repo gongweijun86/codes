@@ -1,0 +1,39 @@
+[10:29:11:809]:GH01B
+[10:29:11:810]:GH01A
+[10:29:11:811]:GH01
+[10:29:11:811]:GN01A
+[10:29:11:812]:GN01B
+[10:29:11:813]:GN01
+[11:16:00:88]program start
+[11:16:00:292]add port:GH01B
+[11:16:00:292]add port:GH01A
+[11:16:00:293]add net element:GH01
+[11:16:00:293]add port:GN01A
+[11:16:00:294]add port:GN01B
+[11:16:00:295]add net element:GN01
+[11:40:55:989]program start
+[11:40:56:82]add port:GH01B
+[11:40:56:83]add port:GH01A
+[11:40:56:83]add net element:GH01
+[11:40:56:84]add port:GN01A
+[11:40:56:84]add port:GN01B
+[11:40:56:85]add net element:GN01
+[11:49:59:470]program start
+[11:49:59:563]add port:GH01B
+[11:49:59:563]add port:GH01A
+[11:49:59:564]add net element:GH01
+[11:49:59:564]add port:GN01A
+[11:49:59:565]add port:GN01B
+[11:49:59:568]add net element:GN01
+[14:28:33:644]program start
+[14:28:34:296]add port:GH01B
+[14:28:34:296]add port:GH01A
+[14:28:34:297]add net element:GH01
+[14:28:34:297]add port:GN01A
+[14:28:34:298]add port:GN01B
+[14:28:34:300]add net element:GN01
+[14:42:45:367]program start
+[14:42:45:539]add port:GH01B
+[14:42:45:540]add port:GH01A
+[14:42:45:540]add net element:GH01
+[14:42:45:540]add port:GN01A

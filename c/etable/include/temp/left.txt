@@ -1,0 +1,17 @@
+	uint8_t table_id;
+	uint8_t section_syntax_indicator;
+	uint8_t reserved_future_use1;
+	uint8_t reserved1;
+	uint16_t section_length;
+	uint16_t service_id;
+	uint8_t reserved2;
+	uint8_t version_number;
+	uint8_t current_next_indicator;
+	uint8_t section_number;
+	uint8_t last_section_number;
+	uint16_t transport_stream_id;
+	uint16_t original_network_id;
+	uint8_t segment_last_section_number;
+	uint8_t last_table_id;
+	EIT_DESC* description;
+	uint32_t CRC_32;

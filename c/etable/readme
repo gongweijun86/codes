@@ -1,0 +1,8 @@
+uncompleted:
+× 1、error可以使用errorcode
+× 2、没有校验crc
+× 3、ts adaptation没有实现
+× 4、pmt descriptor没有实现
+× 5、nit descriptor没有全部实现
+× 6、nit TSL没有实现
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while read $LINE
+do
+	start=`echo ${LINE#' '}`
+	num=`echo ${LINE%' '}`
+	while read $FILE_LINE
+	do
+		r=`grep ${start} ${FILE_LINE}`
+		if [ r -ne '' ]
+			sed 's/.*$/ ${num}/g'
+			break
+		fi
+	done < file
+done

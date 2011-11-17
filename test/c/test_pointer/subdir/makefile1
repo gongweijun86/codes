@@ -1,0 +1,24 @@
+all: main
+sources = $(wildcard *.c)
+objdir_o = ../obj.o
+objdir_d = ../obj.d
+objs = $(shell echo $(objdir_o)/*.o)
+
+main: $(objs)
+	echo $(objs)
+	gcc -o main $(objs)
+
+clean:
+	-rm main $(objdir_o)/*.o $(objdir_d)/*.d
+
+.PHONY: clean
+
+include $(sources:$(objdir_d)/%.d=$(objdir_o)/%.c)
+
+$(objdir_d)/%.d: $(objdir_o)/%.c
+	gcc -MMD -MF $(objdir_d)/$*.d -c $< -o $(objdir_o)/$*.o
+#	set -e; rm -f $@; \
+	
+##	gcc -c $<; \
+#	sed 's/\($*\)\.o[ :]*/\1.o $@ : /g' < $@.$$$$ > $@; \
+#	rm -f $@.$$$$

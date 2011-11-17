@@ -1,0 +1,17 @@
+nit.table_id;
+nit.section_syntax_indicator;
+nit.reserved_future_use1;
+nit.reserved1;
+nit.section_length;
+nit.service_id;
+nit.reserved2;
+nit.version_number;
+nit.current_next_indicator;
+nit.section_number;
+nit.last_section_number;
+nit.transport_stream_id;
+nit.original_network_id;
+nit.segment_last_section_number;
+nit.last_table_id;
+nit.description;
+nit.CRC_32;
